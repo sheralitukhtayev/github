@@ -1,0 +1,53 @@
+i {
+  color: gray;
+}
+
+.repo {
+  width: 45%;
+  border: 1px solid #ccc;
+  background-color: rgba(235, 235, 235, 1);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in;
+  cursor: pointer;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 1.5rem;
+  max-height: 1.5rem;
+}
+
+.title span {
+  color: #0366d6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.desc {
+  font-size: 14px;
+  color: rgb(80, 90, 90);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.5rem;
+  max-height: 3rem;
+}
+
+.subitem {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
