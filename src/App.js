@@ -4,7 +4,7 @@ import UserPage from "./container/UserPage";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 function App() {
-  const username = "UserName";
+  const username = (prompt = "Find User");
   return (
     <BrowserRouter>
       <Switch>
