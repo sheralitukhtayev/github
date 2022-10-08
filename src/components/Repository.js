@@ -1,23 +1,23 @@
 import React from "react";
 
-import "./Repositories.css";
+import "./Repository.css";
 
 const Repository = ({ repo, user }) => (
   <div className="repo">
-    <div>
+    <div className="top-row">
       <div className="title">
-        <i className="fa fa-book pr-1" />
         <a
           href={`https://github.com/${repo.full_name}`}
           target="_blank"
           rel="noopener norefferer"
         >
-          <span>{repo.name}</span>
+          <span className="repo-name">{repo.name}</span>
         </a>
       </div>
-      <span className="description">{repo.description}</span>
+      <p className="visibility">{repo.visibility}</p>
     </div>
-    <div className="d-flex">
+    <span className="description">{repo.description}</span>
+    <div className="bottom-row">
       <div className="subitem">
         <i className="fa fa-code pr-1" />
         <span>{repo.language}</span>
@@ -28,7 +28,7 @@ const Repository = ({ repo, user }) => (
       </div>
       <div className="subitem">
         <i className="fa fa-code-fork pr-1" />
-        <span>{repo.forks_count}</span>
+        <span>{repo.forks}</span>
       </div>
     </div>
   </div>

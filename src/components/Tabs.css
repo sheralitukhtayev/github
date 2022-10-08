@@ -9,3 +9,7 @@
   font-size: 14px;
   color: #586069;
 }
+
+.nav-item {
+  display: flex;
+}

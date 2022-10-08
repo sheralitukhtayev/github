@@ -11,3 +11,10 @@ export async function getUserRepositories(userName) {
   const repositories = await axios.get(`${URL_BASE}/users/${userName}/repos`);
   return repositories;
 }
+
+try {
+  getUserData();
+  getUserRepositories();
+} catch (error) {
+  console.log(error);
+}

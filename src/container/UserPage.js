@@ -36,8 +36,10 @@ function UserPage({ match }) {
           <Navbar user={user} />
           <div className="container">
             <UserInfos className={"userinfo"} user={user} />
-            <Tabs className={"tabs"} repos={repositories} user={user} />
-            {/* <Repositories repos={repositories} user={user} /> */}
+            <div className="container-right">
+              <Tabs className={"tabs"} repos={repositories} user={user} />
+              <Repositories repos={repositories} user={user} />
+            </div>
           </div>
         </>
       ) : (

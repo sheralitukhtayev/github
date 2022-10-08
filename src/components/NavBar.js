@@ -9,7 +9,7 @@ function NavBar({ user }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark ">
       <div className="left">
-        <a href="#">
+        <Link exact to="/">
           <img
             src={gitIcon}
             width={"35"}
@@ -17,10 +17,11 @@ function NavBar({ user }) {
             className={"mr-3 avatar img"}
             alt={"user"}
           />
-        </a>
+        </Link>
 
         <form>
           <input
+            id="input"
             type="text"
             placeholder="Search or jump to... "
             className="input"
@@ -37,7 +38,12 @@ function NavBar({ user }) {
             <Link className="link" exact to="/marketplace">
               Marketplace
             </Link>
-            <Link className="link" exact to="/explore">
+            <Link
+              href="https://github.com/${user.login}/explore"
+              className="link"
+              exact
+              to="/explore"
+            >
               Explore
             </Link>
           </ul>
