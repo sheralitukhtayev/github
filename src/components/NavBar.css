@@ -34,8 +34,7 @@
 .input:focus {
   outline: none !important;
 }
-
-.input[placeholder],
+*/ .input[placeholder],
 [placeholder],
 *[placeholder] {
   color: rgba(255, 255, 255, 0.9) !important;
@@ -70,7 +69,7 @@ ul {
 .right {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   text-align: right;
   width: 40%;
   justify-content: right;
@@ -88,4 +87,34 @@ ul {
 
 .pro-img {
   width: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left input {
+    margin: 20px 0;
+  }
+
+  .right {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+  }
 }

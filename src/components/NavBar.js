@@ -2,10 +2,12 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./NavBar.css";
 import gitIcon from "./git-icon.png";
 import { Link } from "react-router-dom";
+// import Input from "./Input";
 
 import React from "react";
 
 function NavBar({ user }) {
+  // export default const username = document.getElementById("input");
   return (
     <nav className="navbar navbar-expand-lg navbar-dark ">
       <div className="left">

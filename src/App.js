@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import UserPage from "./container/UserPage";
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
-import { input } from "./components/NavBar";
+// import { input } from "./components/NavBar";
 
 function App() {
   const username = prompt("name");
